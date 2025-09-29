@@ -38,6 +38,7 @@ source autogen-env/bin/activate
 
 Inside your environment:
 
+```bash
 pip install --upgrade pip
 pip install pyautogen autogen-core autogen-agentchat autogen-ext
 pip install openai anthropic
@@ -48,11 +49,13 @@ pip install mcp mcp-server-fetch
 
 The docs often use:
 
+```bash
 StdioServerParams(command="uvx", args=["mcp-server-fetch"])
 
 
 But Windows doesn’t ship uvx. Instead, call the MCP fetch server with Python:
 
+```bash
 fetch_mcp_server = StdioServerParams(
     command="python3",
     args=["-m", "mcp_server_fetch"],
