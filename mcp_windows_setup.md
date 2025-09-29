@@ -45,12 +45,14 @@ pip install openai anthropic
 pip install requests pillow python-dotenv pydantic ipython jupyterlab tiktoken
 pip install mcp mcp-server-fetch
 
+
 ## ⚡ Step 3: Replace uvx with Python
 
 The docs often use:
 
 ```bash
 StdioServerParams(command="uvx", args=["mcp-server-fetch"])
+
 
 
 But Windows doesn’t ship uvx. Instead, call the MCP fetch server with Python:
@@ -61,6 +63,7 @@ fetch_mcp_server = StdioServerParams(
     args=["-m", "mcp_server_fetch"],
     read_timeout_seconds=30,
 )
+
 
 ## ⚡ Step 4: Full Example
 
