@@ -101,6 +101,7 @@ Expected Console Output:
 
 🧠 Core Concepts Simplified
 |Concept	|Explanation|
+|----------------|-------------|
 |Autogen Core|	The body 🦾 — gives each agent an identity, mailbox, and a way to pass messages through the runtime.|
 |Autogen AgentChat|	The brain 🧠 — lets each agent think, reason, and reply using an LLM like GPT-4o.|
 |Combined System|	The AI Startup Studio combines both: Autogen Core manages message flow, and AgentChat generates intelligent responses.|
