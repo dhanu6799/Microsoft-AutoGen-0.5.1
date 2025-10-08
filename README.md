@@ -42,3 +42,34 @@ Every stage produces a Markdown file under /output/:
 final_startup.md
 
 Each file contains detailed reasoning, features, and evaluations for the proposed startup idea.
+
+Each file in this repository contains detailed reasoning, features, and evaluations for the proposed startup ideas.  
+This project demonstrates how autonomous multi-agent systems can simulate an end-to-end **AI-driven startup incubation process** using **Autogen Core** and **Autogen AgentChat**.
+
+---
+
+## 🧩 Tech Stack Overview
+
+| Layer | Library / Concept |
+|--------|------------------|
+| **Agent Runtime** | `autogen_core` — manages agent identities (`AgentId`), message passing (`RoutedAgent`), and runtime orchestration. |
+| **LLM Brain** | `autogen_agentchat` — powers each agent’s thinking and conversation via `AssistantAgent` (uses OpenAI GPT-4o-mini). |
+| **Communication** | gRPC runtime from `autogen_ext.runtimes.grpc` enabling distributed agents. |
+| **Environment** | Python 3.12 +, `uv` for lightweight virtual environments. |
+| **Visualization (optional)** | LangGraph / Streamlit for visualizing the workflow. |
+
+---
+
+## ⚙️ Installation & Run Guide
+
+```bash
+# 1️⃣  Clone the repository
+git clone https://github.com/<your-username>/<repo-name>.git
+cd <repo-name>/AI_Startup_Studio
+
+# 2️⃣  Create virtual environment (recommended)
+uv venv
+uv pip install autogen-core autogen-agentchat autogen-ext python-dotenv
+
+# 3️⃣  Run the orchestrator
+uv run world.py
