@@ -109,14 +109,21 @@ Expected Console Output:
 🧩 Architecture Diagram
 
 Autogen Core = Body (message routing & runtime)
+
 Autogen AgentChat = Brain (reasoning & creativity)
 
 🧱 Example: Folder Agent Creator/
+
 File	Purpose
+
 agent.py	Defines generic agent behavior and conversation logic.
+
 creator.py	Spawns and registers all specialized agents.
+
 messages.py	Defines message structure and routing helpers.
+
 world.py	The orchestrator — runs the full multi-agent startup pipeline.
+
 Output/	Sample markdown outputs from a full run.
 
 
