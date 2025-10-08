@@ -35,12 +35,10 @@ Creator Agent  →  Registers Specialized Agents
 🗂️ Output
 
 Every stage produces a Markdown file under /output/:
-"""
 1_research.md
 2_design.md
 3_engineer.md
 4_review.md
 final_startup.md
-"""
 
 Each file contains detailed reasoning, features, and evaluations for the proposed startup idea.
