@@ -32,7 +32,9 @@ Creator Agent  →  Registers Specialized Agents
    ├─ EngineerAgent  →  Proposes system architecture
    ├─ ReviewerAgent  →  Evaluates strengths & risks
    └─ PMAgent        →  Summarizes final startup brief
+
 🗂️ Output
+```text
 
 Every stage produces a Markdown file under /output/:
 1_research.md
