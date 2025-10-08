@@ -24,7 +24,7 @@ an **AI Startup Studio** that autonomously ideates, designs, and documents start
 
 ## 🚀 AI Startup Studio Workflow
 
-```text
+```
 Creator Agent  →  Registers Specialized Agents
    │
    ├─ ResearchAgent  →  Finds a real-world problem
@@ -32,9 +32,11 @@ Creator Agent  →  Registers Specialized Agents
    ├─ EngineerAgent  →  Proposes system architecture
    ├─ ReviewerAgent  →  Evaluates strengths & risks
    └─ PMAgent        →  Summarizes final startup brief
+```
+
 
 🗂️ Output
-```text
+
 
 Every stage produces a Markdown file under /output/:
 1_research.md
