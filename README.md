@@ -66,7 +66,7 @@ This project demonstrates how autonomous multi-agent systems can simulate an end
 
 ## ⚙️ Installation & Run Guide
 
-```bash
+```
 # 1️⃣  Clone the repository
 git clone https://github.com/<your-username>/<repo-name>.git
 cd <repo-name>/AI_Startup_Studio
@@ -77,3 +77,52 @@ uv pip install autogen-core autogen-agentchat autogen-ext python-dotenv
 
 # 3️⃣  Run the orchestrator
 uv run world.py
+```
+
+Expected Console Output:
+```
+✅ Registered agent_research (Agent)
+✅ Registered agent_designer (Agent)
+✅ Registered agent_engineer (Agent)
+✅ Registered agent_reviewer (Agent)
+✅ Registered agent_pm (Agent)
+
+🚀 Starting AI Startup Studio pipeline...
+
+[Stage 1: Research ✅]
+[Stage 2: Design ✅]
+[Stage 3: Engineering ✅]
+[Stage 4: Review ✅]
+[Stage 5: PM Summary ✅]
+
+✅  Startup Studio run complete! Check the 'output' folder.
+
+```
+
+🧠 Core Concepts Simplified
+|Concept	|Explanation|
+|Autogen Core|	The body 🦾 — gives each agent an identity, mailbox, and a way to pass messages through the runtime.|
+|Autogen AgentChat|	The brain 🧠 — lets each agent think, reason, and reply using an LLM like GPT-4o.|
+|Combined System|	The AI Startup Studio combines both: Autogen Core manages message flow, and AgentChat generates intelligent responses.|
+
+🧩 Architecture Diagram
+
+Autogen Core = Body (message routing & runtime)
+Autogen AgentChat = Brain (reasoning & creativity)
+
+🧱 Example: Folder Agent Creator/
+File	Purpose
+agent.py	Defines generic agent behavior and conversation logic.
+creator.py	Spawns and registers all specialized agents.
+messages.py	Defines message structure and routing helpers.
+world.py	The orchestrator — runs the full multi-agent startup pipeline.
+Output/	Sample markdown outputs from a full run.
+
+
+✨ Future Enhancements
+
+Add LangGraph visualization for real-time agent flow.
+
+Extend with external tools (APIs, web scrapers, DB connectors).
+
+Deploy as an autonomous Startup Incubator API.
